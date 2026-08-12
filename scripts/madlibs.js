@@ -4,13 +4,35 @@ let noun=prompt("A noun:");
 let food=prompt("A food:");
 let game=prompt("A game:");
 
+let closings=[
+	"You are a Legend!",
+	"Stay Golden.",
+	"Signs point to Awesome.",
+	"You got this!",
+	"You are Amazing!",
+	"Greatness is within you.",
+	"You are a Masterpiece.",
+	"You can do it!"
+	
+	];
+	
+	
+	
+function randomNumber(a,b){
+	return Math.floor(Math.random() * (b - a + 1)) + a;
+}
+
+
 
 function makeCard(){
 	
 	console.log("Dear " + name + ",");
 	console.log("You are very " + adjective + " , may people bring you plenty of " + noun + "s on your Birthday!");
-	console.log("If you eat more " + food + " and play  more " + game + ", you'll live longer!");
-	console.log("Happy Birthday from the generator.");
+	console.log("If you eat more " + food + " and play more " + game + ", you'll live longer!");
+	
+	let index=randomNumber(0,closings.length - 1);
+	console.log(closings[index]);
+	
 }
 
 
