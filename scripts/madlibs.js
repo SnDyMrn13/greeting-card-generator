@@ -3,6 +3,9 @@ let adjective=prompt("An adjective:");
 let noun=prompt("A noun:");
 let food=prompt("A food:");
 let game=prompt("A game:");
+let style=prompt("fancy or silly?");
+
+
 
 let closings=[
 	"You are a Legend!",
@@ -13,7 +16,7 @@ let closings=[
 	"Greatness is within you.",
 	"You are a Masterpiece.",
 	"You can do it!"
-	
+
 	];
 	
 	
@@ -25,8 +28,13 @@ function randomNumber(a,b){
 
 
 function makeCard(){
+	if(style==="fancy"){
+		console.log("Dearest " + name + ",");
+	}else{
+		console.log("Yo " + name + "!");
+	}
 	
-	console.log("Dear " + name + ",");
+	
 	console.log("You are very " + adjective + " , may people bring you plenty of " + noun + "s on your Birthday!");
 	console.log("If you eat more " + food + " and play more " + game + ", you'll live longer!");
 	
