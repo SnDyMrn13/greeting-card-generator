@@ -15,7 +15,8 @@ let closings=[
 	"You are Amazing!",
 	"Greatness is within you.",
 	"You are a Masterpiece.",
-	"You can do it!"
+	"You can do it!",
+	"You are Grrreat!",
 
 	];
 	
