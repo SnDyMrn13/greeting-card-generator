@@ -30,6 +30,8 @@ function randomNumber(a,b){
 
 function makeCard(){
 	
+	let cardSection=document.getElementById("card-section");
+	cardSection.hidden=false;
 	let friendName=nameInput.value;
 	let adjective=adjectiveInput.value;
 	let noun=nounInput.value;
