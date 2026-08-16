@@ -65,7 +65,7 @@ function resetGenerator(){
 	gameInput.value="";
 	let cardSection=document.getElementById("card-section");
 	cardSection.hidden=true;
-	
+	bonusLine.hidden=true;
 	
 }
 	
