@@ -7,6 +7,8 @@ let makeButton=document.getElementById("make-button");
 let cardText=document.getElementById("card-text");
 let index=document.getElementById("closing-text");
 let resetButton=document.getElementById("reset-button");
+let cardsMade=0;
+let bonusLine=document.getElementById("bonus-line");
 
 
 let closings=[
@@ -47,7 +49,10 @@ function makeCard(){
 		".  You are very " + adjective + ",  may people bring you plenty of " + noun + "s on your Birthday! " + 
 		"  If you eat more " + food + " and play more " + game + ", you'll live longer!  " + index ;
 		
-		
+	cardsMade=cardsMade	+ 1;
+	if(cardsMade >=5){
+		bonusLine.hidden=false;
+	}
 	
 }
 
