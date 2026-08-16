@@ -6,6 +6,8 @@ let gameInput=document.getElementById("game-input");
 let makeButton=document.getElementById("make-button");
 let cardText=document.getElementById("card-text");
 let index=document.getElementById("closing-text");
+let resetButton=document.getElementById("reset-button");
+
 
 let closings=[
 	"You are Legend!",
@@ -47,12 +49,22 @@ function makeCard(){
 		
 		
 	
+}
+
+function resetGenerator(){
 	
+	nameInput.value="";
+	adjectiveInput.value="";
+	nounInput.value="";
+	foodInput.value="";
+	gameInput.value="";
+	let cardSection=document.getElementById("card-section");
+	cardSection.hidden=true;
 	
 	
 }
-
 	
 	
 makeButton.addEventListener("click", makeCard);
 
+resetButton.addEventListener("click",resetGenerator);
