@@ -29,11 +29,15 @@ function randomNumber(a,b){
 
 
 function makeCard(){
+	
+	
+	
 	if(style.toLowerCase()==="fancy"){
 		console.log("Dearest " + name + ",");
 	}else{
 		console.log("Yo " + name + "!");
 	}
+	
 	
 	
 	console.log("You are very " + adjective + " , may people bring you plenty of " + noun + "s on your Birthday!");
