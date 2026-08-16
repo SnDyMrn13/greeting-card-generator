@@ -1,0 +1,10 @@
+body{
+	background-color:azure;
+	
+}
+input:focus,
+textarea:focus{
+	outline 3px solid steelblue;
+	background-color:lightyellow;
+	
+}
